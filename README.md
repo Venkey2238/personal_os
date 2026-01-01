@@ -55,7 +55,7 @@
 ### **Development Setup**
 ```bash
 # Clone repository
-git clone https://github.com/YOUR-USERNAME/ai-personal-os.git
+git clone https://github.com/Venkey2238/ai-personal-os.git
 cd ai-personal-os
 
 # Run setup script
