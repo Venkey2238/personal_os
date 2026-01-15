@@ -1,63 +1,72 @@
-# 🧠 AI Personal Operating System
+# 🧠 PersonalOS v1 — Task & Notes System
 
-> From simple task manager to autonomous AI planner
+> A clean, production-ready backend system that forms **Version 1** of an evolving **AI Personal Operating System**.
 
-## 🚀 Evolution Roadmap
+This project is not a tutorial demo.  
+It is the **foundation of a long-term system** that evolves through analytics, AI insights, and autonomous planning.
 
-### **Phase 1: FocusLog (Week 1-2)**
-- Task and note management (CRUD)
-- User authentication
-- Clean, minimal UI
-- PostgreSQL-backed persistence
+---
 
-### **Phase 2: Pattern Detection (Week 3-4)**
-- Task completion tracking
-- Daily summaries
-- Behavioral pattern detection
-- Visual analytics & charts
+## 🚀 What Is PersonalOS?
 
-### **Phase 3: AI Analyst (Week 5-6)**
-- AI-generated weekly insights
-- Context-aware analysis of habits
-- Natural language summaries
+PersonalOS is a backend-first system designed to manage:
+* Tasks
+* Notes
+* Structured personal data
 
-### **Phase 4: Autonomous Planner (Week 7-8)**
-- AI-generated next-day plans
-- Constraint-aware scheduling
-- Background jobs & caching
-- Production deployment
+**Version 1 focuses on correct fundamentals:**
+* Clean REST APIs
+* Database persistence
+* Validation & error handling
+* Transaction safety
+
+Future versions will **extend this same system**, not replace it.
+
+---
+
+## 🧩 System Evolution Roadmap
+
+This repository represents **V1** of a single evolving product:
+
+| Version | Capability | Status |
+| :--- | :--- | :--- |
+| **V1** | **Task & Notes Management (this repo)** | **✅ Complete** |
+| **V2** | Analytics & behavioral patterns | 🚧 Next |
+| **V3** | AI insights & summaries | 📅 Planned |
+| **V4** | Autonomous daily planning | 📅 Planned |
+
+This mirrors how **real products grow in production**.
+
+---
 
 ## 🛠 Tech Stack
 
-### **Backend**
-- Python 3.11+
-- FastAPI (async, modern)
-- PostgreSQL + SQLAlchemy
-- Redis (Phase 4)
+### Backend
+* **Python 3.12**
+* **FastAPI**: High-performance API framework.
+* **SQLAlchemy ORM**: Database interaction.
+* **PostgreSQL**: Robust relational database.
 
-### **Frontend**
-- Next.js 14 (App Router)
-- Tailwind CSS
-- Chart.js / Recharts
+### Tooling
+* **Uvicorn**: ASGI server.
+* **Pydantic**: Data validation and serialization.
+* **Swagger/OpenAPI**: Automatic API documentation.
 
-### **AI Integration**
-- OpenAI API
-- LangChain (advanced workflows)
-- Context engineering
+---
 
-### **Infrastructure**
-- Docker + Docker Compose
-- GitHub Actions
-- AWS/Railway deployment
+## 📁 Project Structure
 
-## 🚦 Getting Started
+```text
+personal-os/
+├── app/
+│   ├── main.py        # FastAPI routes & application logic
+│   ├── models.py      # Database models (SQLAlchemy)
+│   ├── schemas.py     # Request/response validation (Pydantic)
+│   ├── database.py    # Database connection & session handling
+│   └── init_db.py     # Table creation script
+├── venv/              # Virtual environment
+└── README.md          # Documentation
 
-### **Development Setup**
-```bash
-# Clone repository
-git clone https://github.com/Venkey2238/ai-personal-os.git
-cd ai-personal-os
 
-# Run setup script
-chmod +x scripts/setup.sh
-./scripts/setup.sh
+
+
