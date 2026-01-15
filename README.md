@@ -63,8 +63,7 @@ personal-os/
 │   ├── models.py      # Database models (SQLAlchemy)
 │   ├── schemas.py     # Request/response validation (Pydantic)
 │   ├── database.py    # Database connection & session handling
-│   └── init_db.py     # Table creation script
-├── venv/              # Virtual environment
+│   └── init_db.py     # Table creation script             
 └── README.md          # Documentation
 
 
